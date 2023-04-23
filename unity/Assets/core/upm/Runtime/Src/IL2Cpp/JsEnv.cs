@@ -54,6 +54,8 @@ namespace Puerts
 
         public JsEnv(ILoader loader, int debugPort = -1)
         {
+        
+            UnityEngine.Debug.Log("Src/IL2Cpp/JsEnv.cs");
             this.loader = loader;
 
             //only once is enough

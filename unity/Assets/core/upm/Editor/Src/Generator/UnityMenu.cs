@@ -86,6 +86,8 @@ namespace Puerts.Editor
 #endif
                 Directory.CreateDirectory(saveTo);
                 FileExporter.GenMarcoHeader(saveTo, forceIl2Cpp);
+
+                Debug.Log("GenerateMacroHeader finished! saveTo =" + saveTo + "");
             }
 
             [MenuItem(PUERTS_MENU_PREFIX + "/Clear Generated Code", false, 9)]

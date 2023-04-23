@@ -30,6 +30,7 @@ runs:
     #   with:
     #     github_token: ${{ inputs.GITHUB_TOKEN }}
     #     backend: ${{ inputs.backend }}
+    # node ../cli make --platform win --backend v8_9.4 --config Release --arch x64
     - name: Build
       shell: powershell
       run: |

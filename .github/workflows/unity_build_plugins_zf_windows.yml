@@ -1,0 +1,30 @@
+name: unity build plugins
+
+on: 
+  workflow_dispatch:
+  push:
+    paths: 
+      - unity/native_src/**
+      - unity/native_src_il2cpp/**
+      - unity/cli/**
+      - unreal/Puerts/Source/JsEnv/Private/V8InspectorImpl.cpp
+      - unreal/Puerts/Source/JsEnv/Private/V8InspectorImpl.h
+      - unreal/Puerts/Source/JsEnv/Private/PromiseRejectCallback.hpp
+      - .github/workflows/unity_build_plugins.yml
+
+env:
+  RUNID: 613573412
+
+jobs:
+
+
+  windows:
+    runs-on: windows-2019
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: BuildWindows
+        uses: ./.github/workflows/composites/unity-build-plugins/windows/
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          backend: v8_9.4

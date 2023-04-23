@@ -76,6 +76,7 @@ namespace Puerts
 
         public JsEnv(ILoader loader, int debugPort, IntPtr externalRuntime, IntPtr externalContext)
         {
+            UnityEngine.Debug.Log("Src/JsEnv.cs");
             const int libVersionExpect = 31;
             int libVersion = PuertsDLL.GetApiLevel();
             if (libVersion != libVersionExpect)
