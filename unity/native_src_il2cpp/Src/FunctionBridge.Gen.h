@@ -16709,7 +16709,7 @@ static bool w_vi4s_r4r4r4r4r4r4r4r4r4r4r4r4r4r4r4r4_(void* method, MethodPointer
 
 // Void UpdateCubeRotate(Puerts.ArrayBuffer)
 static bool w_vo(void* method, MethodPointer methodPointer, const v8::FunctionCallbackInfo<v8::Value>& info, bool checkJSArgument, WrapData* wrapData) {
-    PLog(LogLevel::Log, "Running w_vo UpdateCubeRotate");
+    PLog(LogLevel::Log, "Running w_vo UpdateCubeRotate native_src_il2cpp");
     
     auto TIp0 = wrapData->TypeInfos[0];
 
